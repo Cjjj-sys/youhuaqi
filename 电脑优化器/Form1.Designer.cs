@@ -36,6 +36,8 @@ namespace 电脑优化器
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tb = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +86,7 @@ namespace 电脑优化器
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(16, 112);
+            this.label1.Location = new System.Drawing.Point(140, 171);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 12);
             this.label1.TabIndex = 4;
@@ -98,11 +100,33 @@ namespace 电脑优化器
             this.tb.TabIndex = 5;
             this.tb.Text = "";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("宋体", 12F);
+            this.label2.Location = new System.Drawing.Point(158, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "智力障碍";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(13, 109);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(103, 25);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "清理内存";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 135);
+            this.ClientSize = new System.Drawing.Size(260, 192);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.tb);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -111,8 +135,10 @@ namespace 电脑优化器
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "电脑优化器";
+            this.Text = "电脑优化器v0.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -128,6 +154,8 @@ namespace 电脑优化器
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox tb;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button4;
     }
 }
 
