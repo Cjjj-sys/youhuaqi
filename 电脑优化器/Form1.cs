@@ -21,7 +21,7 @@ namespace 电脑优化器
             InitializeComponent();
         }
 
-        private string GetCmdOutput(string arg,bool nowindow)
+        private static string GetCmdOutput(string arg,bool nowindow)
         {
             try
             {
@@ -252,6 +252,11 @@ namespace 电脑优化器
             }
             return capacity;
         }
-        
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            KillP killP = new KillP();
+            killP.ShowDialog();
+        }
     }
 }
